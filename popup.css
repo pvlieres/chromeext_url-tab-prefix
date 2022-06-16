@@ -1,0 +1,93 @@
+:root {
+    --border-color: #ddd;
+    --font-color: #3c3c3c;
+    --font-color-light: #858585;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+hr {
+    margin-left: -20px;
+    margin-right: -20px;
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+table caption {
+    display: none;
+}
+
+th {
+    text-align: start;
+}
+
+h1 {
+    color: #3c6d7a;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 8px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+code {
+    display: inline-block;
+    padding: 4px;
+    font-size: 0.8rem;
+    background: var(--border-color);
+    border-radius: 8px;
+}
+
+input {
+    padding: 6px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+table button {
+    position: relative;
+    height: 29px;
+    width: 29px;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+table button:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\D7";
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--font-color-light);
+}
+table button:hover:after {
+    color: var(--font-color);
+}
+
+.hint {
+    font-size: .8rem;
+    display: block;
+    margin: 4px;
+    text-align: right;
+    color: var(--font-color-light);
+}

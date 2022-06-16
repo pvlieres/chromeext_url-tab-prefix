@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+
+  "name": "URL tab prefix",
+  "description": "Prefixes the page title in the tab with custom text depending on configured URLs.",
+  "version": "1.0",
+  "author": "PVLIERES (https://github.com/pvlieres)",
+  "icons":
+  {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["prefix-page-title.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  }
+}

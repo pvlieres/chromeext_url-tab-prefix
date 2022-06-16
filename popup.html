@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>URL tab prefix</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>URL tab prefix</h1>
+<hr>
+<div>
+    <p>
+        Prefixes titles in the tab bar depending on the URL.
+    </p>
+    <ul>
+        <li><code>URL pattern</code> a regex pattern that the URL is tested against.</li>
+        <li><code>Text</code> the text that the page title is getting prefixed with if the URL pattern matches.</li>
+    </ul>
+
+    <table>
+        <caption>Configuration:</caption>
+        <thead>
+            <tr>
+                <th scope="col">URL pattern</th>
+                <th scope="col">Text</th>
+                <th scope="col">&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+    <span class="hint">Changes are saved automatically.</span>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
