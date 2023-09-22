@@ -14,6 +14,10 @@ async function init() {
         _.items = [...(config.items ?? []), {}];
         populateForm();
     }
+
+    if (!_.items.length) {
+        addPlaceholderRow();
+    }
 }
 
 function populateForm() {
